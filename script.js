@@ -10,12 +10,14 @@ document.getElementById("addTaskButton").addEventListener("click", function() {
         var removeBtn = document.createElement("button");
         removeBtn.textContent = "Remove";
         removeBtn.className = "remove-btn";
+        
         removeBtn.onclick = function() {
             li.style.opacity = "0";
             setTimeout(function() {
                 li.remove();
             }, 200);
         };
+
         li.appendChild(removeBtn);
         taskList.appendChild(li);
         

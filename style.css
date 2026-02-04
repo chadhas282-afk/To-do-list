@@ -22,6 +22,7 @@ h1 {
     color: #2d3436;
     text-align: center;
 }
+
 .input-section {
     display: flex;
     gap: 8px;
@@ -49,6 +50,11 @@ input[type="text"]:focus {
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#addTaskButton:hover {
+    background-color: #0773c5;
 }
 
 ul {
@@ -66,7 +72,7 @@ li {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-    transition: transform 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 li:hover {
@@ -88,4 +94,23 @@ li:hover {
 .remove-btn:hover {
     background-color: #ff7675;
     color: white;
+}
+@media (max-width: 480px) {
+    body {
+        padding-top: 20px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    #addTaskButton {
+        width: 100%;
+        padding: 14px;
+    }
 }
