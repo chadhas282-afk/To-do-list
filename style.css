@@ -109,10 +109,41 @@ li:hover {
 .edit-btn:hover {
     background-color: #ff7675;
 }
-.button-group {
+.btn-group {
     display: flex;
-    gap: 4px;
-    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+.edit-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #0984e3;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+.edit-btn.save-mode {
+    background-color: #55efc4;
+    color: #00b894;
+}
+
+.edit-btn.save-mode:hover {
+    background-color: #00b894;
+    color: white;
+}
+.task-text {
+    flex: 1;
+    margin-right: 10px;
+    word-break: break-word;
+}
+li {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 480px) {
