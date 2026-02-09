@@ -37,7 +37,7 @@ document.getElementById("addTaskButton").addEventListener("click", function() {
         
         removeBtn.onclick = function() {
             li.style.opacity = "0";
-            li.style.transform = "translateX(20px)";
+            li.style.transform = "translateX(80px)";
             setTimeout(function() {
                 li.remove();
             }, 200);
